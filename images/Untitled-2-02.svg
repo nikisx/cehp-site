@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-bbox="13.4 260.6 1053.3 630" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" data-type="ugc">
+    <g>
+        <path d="M872.4 730.5V318.3H207.6v412.4zM230.5 341.2h619v366.4l-619 .2z" fill-rule="evenodd" fill="#ffffff"/>
+        <path d="M173.9 306.5c0-12.7 10.3-22.9 22.9-23h687.4c12.7 0 22.9 10.3 22.9 23V777H930V306.5c0-25.3-20.5-45.9-45.8-45.9H196.9c-25.3 0-45.8 20.6-45.8 45.9V777H174V306.5Z" fill-rule="evenodd" fill="#ffffff" stroke="#1a8441" stroke-width="9.2" stroke-miterlimit="8"/>
+        <path d="M597.2 810.7v22.8H482.7v-22.8H13.4v22.8c0 31.5 25.6 57.1 57.2 57.1h938.8c31.6 0 57.2-25.6 57.3-57.1v-22.8H597.3Zm412.2 57.1H70.6c-19 0-34.3-15.4-34.4-34.3h423.6c-.4 12.2 9.1 22.4 21.4 22.8h116c12.2.4 22.5-9.1 22.9-21.3v-1.5h423.6c0 18.9-15.4 34.2-34.4 34.3" fill-rule="evenodd" fill="#1a8441"/>
+        <path d="M665 494.4c0-9.4-7.6-17-17-17h-51.2v-51.2c0-9.4-7.6-17-17-17h-68.2c-9.4 0-17 7.6-17 17v51.2h-51.2c-9.4 0-17 7.6-17 17v68.2c0 9.4 7.6 17 17 17h51.2v51.2c0 9.4 7.6 17 17 17h68.2c9.4 0 17-7.6 17-17v-51.2H648c9.4 0 17-7.6 17-17z" fill-rule="evenodd" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke="#1a8441" stroke-width="9.2"/>
+    </g>
+</svg>
