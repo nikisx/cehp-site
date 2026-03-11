@@ -1,0 +1,352 @@
+/* ========================================
+   Manufacturing in Bulgaria - Styles
+   ======================================== */
+
+/* --- Market Context Section --- */
+.mfg-context {
+  padding: 4rem 0;
+  background: var(--bg-white);
+}
+
+.mfg-context-box {
+  max-width: 950px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(26, 58, 92, 0.04), rgba(0, 180, 216, 0.04));
+  border: 1px solid rgba(26, 58, 92, 0.12);
+  border-left: 4px solid var(--accent-blue);
+  border-radius: 0 8px 8px 0;
+  padding: 2rem 2.5rem;
+}
+
+.mfg-context-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-blue);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.mfg-context-box p {
+  font-size: 0.95rem;
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.mfg-context-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Strategic Opportunity Section --- */
+.mfg-opportunity {
+  padding: 5rem 0;
+  background: var(--bg-light);
+}
+
+.mfg-section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.mfg-section-header h2 {
+  font-size: 1.8rem;
+  color: var(--green-heading);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.mfg-section-header p {
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mfg-benefits-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mfg-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 1.5rem;
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+
+.mfg-benefit-item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.mfg-benefit-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.mfg-benefit-item:not(:last-child) {
+  border-bottom: none;
+}
+
+.mfg-benefit-item:hover {
+  background: rgba(27, 138, 58, 0.03);
+}
+
+.mfg-benefit-check {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background: var(--green-heading);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.mfg-benefit-check svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--text-light);
+  fill: none;
+  stroke-width: 3;
+}
+
+.mfg-benefit-item p {
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- Cooperation Section --- */
+.mfg-cooperation {
+  padding: 5rem 0;
+  background: var(--bg-white);
+}
+
+.mfg-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.mfg-pillar-card {
+  background: var(--bg-light);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+
+.mfg-pillar-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.mfg-pillar-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--green-heading), var(--teal));
+}
+
+.mfg-pillar-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green-heading);
+  opacity: 0.15;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.mfg-pillar-card h4 {
+  font-size: 1rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.mfg-pillar-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mfg-pillar-card ul li {
+  padding: 0.3rem 0 0.3rem 1.25rem;
+  position: relative;
+  font-size: 0.88rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.mfg-pillar-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-heading);
+}
+
+/* Bottom row of 2 cards centered */
+.mfg-pillars-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 66.67%;
+  margin: 0 auto;
+}
+
+/* --- Strategic Rationale --- */
+.mfg-rationale {
+  padding: 4rem 0;
+  background: var(--bg-light);
+}
+
+.mfg-rationale-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mfg-rationale-box {
+  background: linear-gradient(135deg, rgba(27, 138, 58, 0.06), rgba(23, 166, 138, 0.06));
+  border-left: 4px solid var(--green-heading);
+  border-radius: 0 8px 8px 0;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.mfg-rationale-box p {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.mfg-rationale-box p:last-child {
+  margin-bottom: 0;
+}
+
+.mfg-rationale-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.mfg-rationale-benefits li {
+  padding: 0.3rem 0 0.3rem 1.25rem;
+  position: relative;
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.mfg-rationale-benefits li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-heading);
+}
+
+/* Next Steps */
+.mfg-next-steps {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+}
+
+.mfg-next-steps h3 {
+  font-size: 1.2rem;
+  color: var(--green-heading);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.mfg-next-steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mfg-next-steps-list li {
+  font-size: 0.92rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  padding-left: 1.25rem;
+  position: relative;
+  text-align: left;
+}
+
+.mfg-next-steps-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-heading);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .mfg-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mfg-pillars-bottom {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mfg-context,
+  .mfg-opportunity,
+  .mfg-cooperation,
+  .mfg-rationale {
+    padding: 3.5rem 0;
+  }
+
+  .mfg-section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .mfg-context-box {
+    padding: 1.5rem;
+  }
+
+  .mfg-rationale-box {
+    padding: 1.5rem;
+  }
+
+  .mfg-next-steps {
+    padding: 1.5rem;
+  }
+}

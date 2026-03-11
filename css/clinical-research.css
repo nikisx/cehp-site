@@ -1,0 +1,299 @@
+/* ========================================
+   Clinical Research in Bulgaria - Styles
+   ======================================== */
+
+/* --- Regulatory Intro --- */
+.cr-intro {
+  padding: 4rem 0 3rem;
+  background: var(--bg-white);
+}
+
+.cr-intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cr-intro-content p {
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* --- Why Bulgaria Section --- */
+.cr-bulgaria {
+  padding: 5rem 0;
+  background: var(--bg-light);
+}
+
+.cr-section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cr-section-header h2 {
+  font-size: 1.8rem;
+  color: var(--green-heading);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.cr-section-header p {
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  font-style: italic;
+}
+
+/* Advantage Cards Grid */
+.cr-advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.cr-advantage-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.75rem;
+  background: var(--bg-white);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+
+.cr-advantage-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* Full-width card for the last item when odd count */
+.cr-advantage-card.cr-full-width {
+  grid-column: 1 / -1;
+  max-width: 50%;
+  justify-self: center;
+}
+
+.cr-advantage-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--green-heading), var(--teal));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cr-advantage-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-light);
+  fill: none;
+  stroke-width: 2;
+}
+
+.cr-advantage-content h4 {
+  font-size: 0.95rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.cr-advantage-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cr-advantage-content ul li {
+  padding: 0.25rem 0 0.25rem 1.15rem;
+  position: relative;
+  font-size: 0.88rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.cr-advantage-content ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-heading);
+}
+
+/* Summary Callout */
+.cr-summary-box {
+  background: linear-gradient(135deg, rgba(27, 138, 58, 0.06), rgba(23, 166, 138, 0.06));
+  border-left: 4px solid var(--green-heading);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem 2rem;
+}
+
+.cr-summary-box p {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* --- Additional Services Section --- */
+.cr-additional {
+  padding: 5rem 0;
+  background: var(--bg-white);
+}
+
+.cr-additional .cr-section-header {
+  margin-bottom: 2rem;
+}
+
+.cr-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cr-service-card {
+  background: var(--bg-light);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+
+.cr-service-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.cr-service-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--green-heading), var(--teal));
+}
+
+.cr-service-card h4 {
+  font-size: 1rem;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.cr-service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cr-service-card ul li {
+  padding: 0.35rem 0 0.35rem 1.25rem;
+  position: relative;
+  font-size: 0.88rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.cr-service-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-heading);
+}
+
+/* Numbered list variant */
+.cr-service-card ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: cr-counter;
+}
+
+.cr-service-card ol li {
+  padding: 0.35rem 0 0.35rem 1.75rem;
+  position: relative;
+  font-size: 0.88rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  counter-increment: cr-counter;
+}
+
+.cr-service-card ol li::before {
+  content: counter(cr-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  font-weight: 700;
+  color: var(--green-heading);
+  font-size: 0.85rem;
+}
+
+/* Compliance Statement */
+.cr-compliance-box {
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.cr-compliance-box p {
+  font-size: 0.92rem;
+  color: var(--text-gray);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .cr-advantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cr-advantage-card.cr-full-width {
+    max-width: 100%;
+  }
+
+  .cr-services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cr-bulgaria,
+  .cr-additional {
+    padding: 3.5rem 0;
+  }
+
+  .cr-section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .cr-advantage-card {
+    padding: 1.25rem;
+  }
+
+  .cr-intro-content {
+    text-align: left;
+  }
+
+  .cr-summary-box {
+    padding: 1.25rem 1.5rem;
+  }
+}

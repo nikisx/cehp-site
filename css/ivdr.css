@@ -1,0 +1,382 @@
+/* ========================================
+   IVDR Page Styles
+   ======================================== */
+
+/* --- Introduction Section --- */
+.ivdr-intro {
+  padding: 4rem 0 3rem;
+  background: var(--bg-white);
+}
+
+.ivdr-intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ivdr-intro-content p {
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.ivdr-intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Service Sections --- */
+.ivdr-service {
+  padding: 5rem 0;
+  background: var(--bg-white);
+}
+
+.ivdr-service-alt {
+  background: var(--bg-light);
+}
+
+/* Service Header with Number */
+.ivdr-service-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ivdr-service-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--green-heading);
+  opacity: 0.2;
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 60px;
+}
+
+.ivdr-service-header h2 {
+  font-size: 1.8rem;
+  color: var(--green-heading);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.ivdr-service-tagline {
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  font-style: italic;
+}
+
+/* Service Body */
+.ivdr-service-body {
+  max-width: 1000px;
+}
+
+.ivdr-service-text {
+  margin-bottom: 2.5rem;
+}
+
+.ivdr-service-text p {
+  font-size: 0.95rem;
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* --- Feature Items (Section 1) --- */
+.ivdr-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ivdr-feature-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+
+.ivdr-feature-item:hover {
+  box-shadow: var(--shadow);
+  border-color: rgba(27, 138, 58, 0.2);
+}
+
+.ivdr-feature-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  color: var(--green-heading);
+}
+
+.ivdr-feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ivdr-feature-item h4 {
+  font-size: 0.95rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.ivdr-feature-item p {
+  font-size: 0.88rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* --- Outcome Box --- */
+.ivdr-outcome-box {
+  background: linear-gradient(135deg, rgba(27, 138, 58, 0.06), rgba(23, 166, 138, 0.06));
+  border-left: 4px solid var(--green-heading);
+  border-radius: 0 8px 8px 0;
+  padding: 1.75rem 2rem;
+  margin-top: 2.5rem;
+}
+
+.ivdr-outcome-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--green-heading);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.ivdr-outcome-box p {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- Process Steps (Section 2) --- */
+.ivdr-process {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.ivdr-process h3 {
+  font-size: 1.2rem;
+  color: var(--green-heading);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.ivdr-process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.ivdr-step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.ivdr-step:not(:last-child) {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ivdr-step-number {
+  width: 44px;
+  height: 44px;
+  background: var(--green-heading);
+  color: var(--text-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.ivdr-step-content h4 {
+  font-size: 1rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.ivdr-step-content p {
+  font-size: 0.92rem;
+  color: var(--text-gray);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- Callout Box --- */
+.ivdr-callout {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.ivdr-service-alt .ivdr-callout {
+  background: var(--bg-white);
+}
+
+.ivdr-callout h4 {
+  font-size: 1.05rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.ivdr-callout p {
+  font-size: 0.92rem;
+  color: var(--text-gray);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.ivdr-callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Cards Grid (Section 3) --- */
+.ivdr-subsection-title {
+  font-size: 1.2rem;
+  color: var(--green-heading);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.ivdr-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ivdr-card {
+  background: var(--bg-light);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+
+.ivdr-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.ivdr-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--green-heading), var(--teal));
+}
+
+.ivdr-card-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green-heading);
+  opacity: 0.15;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.ivdr-card h4 {
+  font-size: 1rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.ivdr-card p {
+  font-size: 0.88rem;
+  color: var(--text-gray);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.ivdr-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.ivdr-card ul li {
+  padding: 0.3rem 0 0.3rem 1.25rem;
+  position: relative;
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+.ivdr-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-heading);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .ivdr-features {
+    grid-template-columns: 1fr;
+  }
+
+  .ivdr-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ivdr-service {
+    padding: 3.5rem 0;
+  }
+
+  .ivdr-service-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .ivdr-service-number {
+    font-size: 2.2rem;
+  }
+
+  .ivdr-service-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .ivdr-step {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .ivdr-outcome-box {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .ivdr-intro-content {
+    text-align: left;
+  }
+}
