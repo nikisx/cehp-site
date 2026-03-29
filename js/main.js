@@ -79,9 +79,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- Mobile dropdown toggle ---
+  document.querySelectorAll('.mobile-nav-dropdown-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('open');
+      const menu = btn.nextElementSibling;
+      if (menu) menu.classList.toggle('open');
+    });
+  });
+
   // --- Active nav link ---
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-links a, .mobile-nav-links a').forEach(link => {
+  document.querySelectorAll('.nav-links a, .mobile-nav-links a, .nav-dropdown-menu a, .mobile-nav-dropdown-menu a').forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
       link.classList.add('active');
