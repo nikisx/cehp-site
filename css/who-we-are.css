@@ -218,11 +218,21 @@
   margin-right: auto;
 }
 
+.team-group-title {
+  font-size: 1.3rem;
+  color: var(--accent-blue);
+  font-weight: 700;
+  margin-top: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--green-heading);
+  display: inline-block;
+}
+
 .experts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .expert-card {

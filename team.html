@@ -88,23 +88,23 @@
       </a>
       <div class="nav-links">
         <a href="team.html" data-i18n="nav.who_we_are">Who We Are</a>
-        <a href="services.html" data-i18n="nav.services">Services We Offer</a>
         <div class="nav-dropdown">
-          <button class="nav-dropdown-toggle" data-i18n="nav.medical_devices">Medical Devices</button>
+          <button class="nav-dropdown-toggle" data-i18n="nav.services">Services</button>
           <div class="nav-dropdown-menu">
-            <a href="mdr.html" data-i18n="nav.mdr">MDR Consulting</a>
-            <a href="ivdr.html" data-i18n="nav.ivdr">IVDR Consulting</a>
-            <a href="clinical-trials.html" data-i18n="nav.clinical_trials">Clinical Trials</a>
+            <div class="nav-dropdown-group">
+              <span class="nav-dropdown-label" data-i18n="nav.medical_devices">Medical Devices</span>
+              <a href="mdr.html" data-i18n="nav.mdr">MDR</a>
+              <a href="ivdr.html" data-i18n="nav.ivdr">IVDR</a>
+              <a href="clinical-trials.html" data-i18n="nav.clinical_investigations">Clinical Investigations</a>
+            </div>
+            <a href="medicines.html" data-i18n="nav.pharmaceuticals">Pharmaceuticals</a>
+            <a href="manufacturing.html" data-i18n="nav.for_manufacturers">For Manufacturers</a>
           </div>
         </div>
-        <a href="medicines.html" data-i18n="nav.medicines">Medicines</a>
-        <a href="manufacturing.html" data-i18n="nav.manufacturing">Manufacturing</a>
         <a href="qa.html" data-i18n="nav.qa">Q&amp;A</a>
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </div>
-      <a href="https://www.healthdatabox.com/" target="_blank" rel="noopener noreferrer" class="nav-right">
-        <img src="images/healthdatabox-logo.png" alt="HealthData Box">
-      </a>
+
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="en">EN</button>
         <span class="lang-sep">|</span>
@@ -122,17 +122,17 @@
     <div class="mobile-nav-links">
       <a href="index.html" data-i18n="nav.home">Home</a>
       <a href="team.html" data-i18n="nav.who_we_are">Who We Are</a>
-      <a href="services.html" data-i18n="nav.services">Services We Offer</a>
       <div class="mobile-nav-dropdown">
-        <button class="mobile-nav-dropdown-toggle" data-i18n="nav.medical_devices">Medical Devices</button>
+        <button class="mobile-nav-dropdown-toggle" data-i18n="nav.services">Services</button>
         <div class="mobile-nav-dropdown-menu">
-          <a href="mdr.html" data-i18n="nav.mdr">MDR Consulting</a>
-          <a href="ivdr.html" data-i18n="nav.ivdr">IVDR Consulting</a>
-          <a href="clinical-trials.html" data-i18n="nav.clinical_trials">Clinical Trials</a>
+          <span class="mobile-nav-dropdown-label" data-i18n="nav.medical_devices">Medical Devices</span>
+          <a href="mdr.html" data-i18n="nav.mdr" class="mobile-nav-sub">MDR</a>
+          <a href="ivdr.html" data-i18n="nav.ivdr" class="mobile-nav-sub">IVDR</a>
+          <a href="clinical-trials.html" data-i18n="nav.clinical_investigations" class="mobile-nav-sub">Clinical Investigations</a>
+          <a href="medicines.html" data-i18n="nav.pharmaceuticals">Pharmaceuticals</a>
+          <a href="manufacturing.html" data-i18n="nav.for_manufacturers">For Manufacturers</a>
         </div>
       </div>
-      <a href="medicines.html" data-i18n="nav.medicines">Medicines</a>
-      <a href="manufacturing.html" data-i18n="nav.manufacturing">Manufacturing</a>
       <a href="qa.html" data-i18n="nav.qa">Q&amp;A</a>
       <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </div>
@@ -249,77 +249,98 @@
     </div>
   </section>
 
-  <!-- Management Team -->
+  <!-- CEHP Team -->
   <section class="wwa-experts">
     <div class="container">
-      <p class="section-label" data-i18n="team.experts_label">#Management Team</p>
-      <h2 class="section-title" data-i18n="team.experts_title">Our Management Team</h2>
-      <p class="section-subtitle center-text" data-i18n="team.experts_subtitle">The leadership driving CEHP's mission in medical device consulting, regulatory affairs, clinical research, and market access across Europe.</p>
+      <h2 class="section-title" data-i18n="team.experts_title">CEHP Team</h2>
 
+      <!-- Scientific, Regulatory & Clinical Experts -->
+      <h3 class="team-group-title animate-on-scroll" data-i18n="team.sci_group_title">Scientific, Regulatory &amp; Clinical Experts</h3>
       <div class="experts-grid">
-        <!-- Prof. Dr. Albena Zlatareva -->
         <div class="expert-card animate-on-scroll">
           <div class="expert-avatar">
-            <img src="images/team/albena-zlatareva.png" alt="Prof. Dr. Albena Zlatareva - Owner & Managing Director">
+            <img src="images/team/albena-zlatareva.png" alt="Prof. Albena Zlatareva">
           </div>
-          <h3 data-i18n="team.expert1_name">Prof. Dr. Albena Zlatareva</h3>
-          <p class="expert-role" data-i18n="team.expert1_role">Owner & Managing Director</p>
+          <h3 data-i18n="team.sci1_name">Prof. Albena Zlatareva, MD, PhD</h3>
+          <p class="expert-role" data-i18n="team.sci1_role">Healthcare Policies</p>
         </div>
 
-        <!-- Eng. Plamen Hristov -->
         <div class="expert-card animate-on-scroll">
-          <div class="expert-avatar placeholder">ПХ</div>
-          <h3 data-i18n="team.expert2_name">Eng. Plamen Hristov</h3>
-          <p class="expert-role" data-i18n="team.expert2_role"></p>
+          <div class="expert-avatar">
+            <img src="images/team/Irina Nikolova.png" alt="Prof. Irina Nikolova">
+          </div>
+          <h3 data-i18n="team.sci2_name">Prof. Irina Nikolova, MD, PhD</h3>
+          <p class="expert-role" data-i18n="team.sci2_role">Market Access &amp; Regulatory Affairs</p>
         </div>
 
-        <!-- Radko Staevski -->
-        <div class="expert-card animate-on-scroll">
-          <div class="expert-avatar placeholder">РС</div>
-          <h3 data-i18n="team.expert3_name">Radko Staevski</h3>
-          <p class="expert-role" data-i18n="team.expert3_role">Director of Business Operations</p>
-        </div>
-
-        <!-- Prof. Mag. Pharm. Irina Nikolova -->
-        <div class="expert-card animate-on-scroll">
-          <div class="expert-avatar placeholder">ИН</div>
-          <h3 data-i18n="team.expert4_name">Prof. Mag. Pharm. Irina Nikolova</h3>
-          <p class="expert-role" data-i18n="team.expert4_role">Director of Regulation & Market Access</p>
-        </div>
-
-        <!-- Prof. Antoaneta Tsvetkova -->
         <div class="expert-card animate-on-scroll">
           <div class="expert-avatar placeholder">АЦ</div>
-          <h3 data-i18n="team.expert5_name">Prof. Antoaneta Tsvetkova</h3>
-          <p class="expert-role" data-i18n="team.expert5_role">Manager CI/HTA</p>
+          <h3 data-i18n="team.sci3_name">Prof. Antoneta Tsvetkova, PhD</h3>
+          <p class="expert-role" data-i18n="team.sci3_role">Pharmacoeconomics</p>
         </div>
 
-        <!-- Mag. Pharm. Elina Bacheva -->
         <div class="expert-card animate-on-scroll">
-          <div class="expert-avatar placeholder">ЕБ</div>
-          <h3 data-i18n="team.expert6_name">Mag. Pharm. Elina Bacheva</h3>
-          <p class="expert-role" data-i18n="team.expert6_role">Director of Clinical Trials</p>
+          <div class="expert-avatar">
+            <img src="images/team/Elina Bacheva.jpg" alt="Mag. Pharm. Elina Bacheva">
+          </div>
+          <h3 data-i18n="team.sci4_name">Mag. Pharm. Elina Bacheva</h3>
+          <p class="expert-role" data-i18n="team.sci4_role">Senior Clinical Trials &amp; HTA Expert</p>
         </div>
 
-        <!-- Dr. Aneliya Zasheva -->
-        <div class="expert-card animate-on-scroll">
-          <div class="expert-avatar placeholder">АЗ</div>
-          <h3 data-i18n="team.expert7_name">Dr. Aneliya Zasheva</h3>
-          <p class="expert-role" data-i18n="team.expert7_role">Director of Clinical Activities</p>
-        </div>
-
-        <!-- Mag. Pharm. Georgi Mankov -->
         <div class="expert-card animate-on-scroll">
           <div class="expert-avatar placeholder">ГМ</div>
-          <h3 data-i18n="team.expert8_name">Mag. Pharm. Georgi Mankov</h3>
-          <p class="expert-role" data-i18n="team.expert8_role">Manager Clinical Trials & Regulations</p>
+          <h3 data-i18n="team.sci5_name">Mag. Pharm. Georgi Munkov</h3>
+          <p class="expert-role" data-i18n="team.sci5_role">Clinical Trials Manager</p>
         </div>
 
-        <!-- Attorney Daniel Kolev -->
         <div class="expert-card animate-on-scroll">
-          <div class="expert-avatar placeholder">ДК</div>
-          <h3 data-i18n="team.expert9_name">Attorney Daniel Kolev</h3>
-          <p class="expert-role" data-i18n="team.expert9_role">Legal Matters & Key Projects Manager</p>
+          <div class="expert-avatar">
+            <img src="images/team/Anelia Zasheva.JPG" alt="Anelia Zasheva, MD">
+          </div>
+          <h3 data-i18n="team.sci6_name">Anelia Zasheva, MD</h3>
+          <p class="expert-role" data-i18n="team.sci6_role">Senior Clinical Specialist</p>
+        </div>
+
+        <div class="expert-card animate-on-scroll">
+          <div class="expert-avatar placeholder">СЗ</div>
+          <h3 data-i18n="team.sci7_name">Stela Zaharinova</h3>
+          <p class="expert-role" data-i18n="team.sci7_role">Clinical Evidence</p>
+        </div>
+      </div>
+
+      <!-- Commercial & Operations -->
+      <h3 class="team-group-title animate-on-scroll" style="margin-top: 3rem;" data-i18n="team.com_group_title">Commercial &amp; Operations</h3>
+      <div class="experts-grid">
+        <div class="expert-card animate-on-scroll">
+          <div class="expert-avatar">
+            <img src="images/team/albena-zlatareva.png" alt="Prof. Albena Zlatareva">
+          </div>
+          <h3 data-i18n="team.com1_name">Prof. Albena Zlatareva, MD, PhD</h3>
+          <p class="expert-role" data-i18n="team.com1_role">Managing Director</p>
+        </div>
+
+        <div class="expert-card animate-on-scroll">
+          <div class="expert-avatar">
+            <img src="images/team/Plamen Hristov.jpg" alt="Plamen Hristov">
+          </div>
+          <h3 data-i18n="team.com2_name">Plamen Hristov</h3>
+          <p class="expert-role" data-i18n="team.com2_role">Executive Director, Commercial &amp; Operations</p>
+        </div>
+
+        <div class="expert-card animate-on-scroll">
+          <div class="expert-avatar">
+            <img src="images/team/Hristo Vrachev.jpg" alt="Hristo Vrachev">
+          </div>
+          <h3 data-i18n="team.com3_name">Hristo Vrachev</h3>
+          <p class="expert-role" data-i18n="team.com3_role">Business Development Manager</p>
+        </div>
+
+        <div class="expert-card animate-on-scroll">
+          <div class="expert-avatar">
+            <img src="images/team/Radko Staevski.png" alt="Radko Staevski">
+          </div>
+          <h3 data-i18n="team.com4_name">Radko Staevski</h3>
+          <p class="expert-role" data-i18n="team.com4_role">Business Operations Manager</p>
         </div>
       </div>
     </div>
