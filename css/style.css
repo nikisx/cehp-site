@@ -246,6 +246,20 @@ img {
   padding: 0.05rem 3rem;
   max-width: var(--max-width);
   margin: 0 auto;
+  position: relative;
+}
+
+/* With the language switcher hidden there is nothing on the right to balance
+   the logo, so space-between would push the links flush right. Pin them to the
+   true centre of the bar instead. Desktop only — below 1024px .nav-links is
+   hidden and the hamburger takes the right-hand slot. */
+@media (min-width: 1025px) {
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .nav-logo {
@@ -255,8 +269,15 @@ img {
 }
 
 .nav-logo img {
-  height: 80px;
+  height: 130px;
   width: auto;
+}
+
+/* --- Language switcher hidden: the site is English-only for now ---
+   The markup is left in place on every page. To bring the BG version back,
+   delete this rule and re-enable the Bulgarian translations in js/i18n.js. */
+.lang-switcher {
+  display: none !important;
 }
 
 .nav-logo .tagline {
@@ -374,6 +395,36 @@ img {
 
 .nav-dropdown-menu a::after {
   display: none !important;
+}
+
+/* Highlighted first "Our Services" link */
+.nav-dropdown-title {
+  display: block;
+  padding: 0.65rem 1.25rem !important;
+  font-size: 0.85rem !important;
+  font-weight: 800 !important;
+  color: var(--green-heading) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(27, 138, 58, 0.06);
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 0.25rem;
+}
+.nav-dropdown-title:hover {
+  background: rgba(27, 138, 58, 0.12);
+  color: var(--green-heading) !important;
+}
+
+.mobile-nav-dropdown-title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--green-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
 }
 
 /* Dropdown group with label */
@@ -783,7 +834,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  margin: 3rem 0 2.5rem;
+  margin: 3rem 0 0;
 }
 
 .service-home-card {
