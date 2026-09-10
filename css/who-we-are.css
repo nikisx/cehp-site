@@ -235,6 +235,18 @@
   margin-top: 1.5rem;
 }
 
+/* Commercial & Operations is a deliberate 4 + 3 layout, so it needs a fixed
+   column count — the auto-fill above would otherwise fit 5 per row on wide
+   screens. Four columns only fit above ~1000px: the 140px avatar sets a hard
+   floor on card width, and forcing four any narrower pushes the grid past the
+   viewport and gives the whole page a horizontal scrollbar. Below that the
+   auto-fill above takes over and reflows to 3 / 2 / 1. */
+@media (min-width: 1000px) {
+  .experts-grid--four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .expert-card {
   background: var(--bg-white);
   border-radius: 8px;
